@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Code Editors</title>
+	<link rel="shortcut icon" href="coding favicons.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.0.0/split.min.js" integrity="sha512-tTsZnBXEzNdEaqUO9Ok8fUofS73xieiBa54pD/sxOSvayIgItM9MmEM0CnUjA13LDnJT22sfwmjf20+Bo2174g==" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<section class="container">
+		<h1>Code Editor 🧑‍💻</h1>
+
+		<div class="editor split"> 
+			<!-- code html, css, javascript  -->
+			<div class="left">
+				<label for=""><i class='bx bxl-html5' style='color:#e44d26'  ></i>HTML</label>
+				<textarea onkeyup="run()" spellcheck="false" name="" id="html-code" placeholder="Type HTML code here"></textarea>
+
+				<label for=""><i class='bx bxl-css3' style='color:#0096dc'></i>CSS</label>
+				<textarea onkeyup="run()" spellcheck="false" name="" id="css-code" placeholder="Type CSS code here"></textarea>
+
+				<label for=""><i class='bx bxl-javascript' style="color:#f0db4e;"></i>JavaScript</label>
+				<textarea onkeyup="run()" spellcheck="false" name="" id="js-code" placeholder="Type JavaScript code here"></textarea>
+
+			</div>
+			 
+			<!-- output  -->
+			<div class="right split">
+            <label for=""><i class='bx bx-play' style="color: aqua; "></i>Output</label>
+			<iframe id="output"></iframe>
+			</div>
+		</div>
+	</section>
+
+	<div class="footer">
+		&copy; 2023 India |  &nbsp;<i class='bx bxl-github bx-tada' style='color:#43c975'  ></i> &nbsp; <a href="https://github.com/ambresh20" class="namelink" target="_blank">Ambresh</a>  
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html> 
+
+
+
+
+
+<!-- <!DOCTYPE html>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.0.0/split.min.js" integrity="sha512-tTsZnBXEzNdEaqUO9Ok8fUofS73xieiBa54pD/sxOSvayIgItM9MmEM0CnUjA13LDnJT22sfwmjf20+Bo2174g==" crossorigin="anonymous"></script>
+ -->
